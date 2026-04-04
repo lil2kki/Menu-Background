@@ -3,7 +3,7 @@ inline static auto NextDraw = geode::ScheduledFunction();
 
 #include <Geode/ui/GeodeUI.hpp>
 using namespace geode::prelude;
-class ModSettingsPopup : public Popup<Mod*> {};
+class ModSettingsPopup : public Popup {};
 
 #define SETTING(type, key_name) Mod::get()->getSettingValue<type>(key_name)
 
@@ -77,7 +77,7 @@ public:
 
             static Ref<CCNode> listenerTarget;
             static Ref<CCNode> listenerTarget2;
-            if (!listenerTarget) listenForSettingChanges(
+            if (!listenerTarget) listenForSettingChanges<std::filesystem::path>(
                 "BACKGROUND_FILE", [](std::filesystem::path value) {
                     setupSprite(listenerTarget, listenerTarget2);
                     //test
