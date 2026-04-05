@@ -6,7 +6,7 @@
     "mac": "2.2081",
     "ios": "2.2081"
   },
-  "version": "1.1.4",
+  "version": "1.1.5",
   "id": "user95401.main-menu-background",
   "name": "Main Menu Background",
   "developers": [ "lil2kki" ],
@@ -16,6 +16,12 @@
     "community": "https://discord.gg/6SxAbk3bTA",
     "homepage": "https://t.me/lil2kki_ch",
     "source": "https://github.com/lil2kki/Menu-Background"
+  },
+  "dependencies": {
+      "prevter.imageplus": {
+          "required": false,
+          "version": ">=v1.0.0"
+      }
   },
   "settings": {
     "SETUP_MODE_ENABLED": {
