@@ -1,4 +1,8 @@
-# 1.1.3 ... 1.1.5
+# 1.1.6
+- fixed compatibility with Geometry Dash 2.2081
+- restored PNG support (backgrounds now load properly)
+
+# 1.1.5
 v5 migrate.
 
 # 1.1.2
@@ -36,4 +40,4 @@ v5 migrate.
 - Support info fix 
 
 # 1.0.0
-- First release. 
+- First release.
