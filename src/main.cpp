@@ -109,8 +109,9 @@ public:
                             "Please select a valid background file",
                             "OK", nullptr, nullptr
                         );
-                    }
-					if (string::containsAny(BACKGROUND_FILE, {".jxl", ".gif", ".webp", ".qoi"}) and !Loader::get()->isModLoaded("prevter.imageplus")) {
+					}
+					std::string ext = BACKGROUND_FILE.substr(BACKGROUND_FILE.find_last_of('.'));
+					if ((ext == ".jxl" || ext == ".gif" || ext == ".webp" || ext == ".qoi") && !Loader::get()->isModLoaded("prever.imageplus")) {
 						MDPopup::create("Unhandleable Image Format", "You can't use that file without [Image Plus](prevter.imageplus) mod loaded!", "OK.")->show();
 					}
                 }
