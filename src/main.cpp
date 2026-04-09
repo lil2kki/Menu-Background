@@ -110,6 +110,9 @@ public:
                             "OK", nullptr, nullptr
                         );
                     }
+					if (string::containsAny(BACKGROUND_FILE, [".jxl", ".gif", ".webp", ".qoi"]) and !Loader::get()->isModLoaded("prevter.imageplus")) {
+						MDPopup::create("Unhandleable Image Format", "You can't use that file without [Image Plus](prevter.imageplus) mod loaded!", "OK.")->show();
+					}
                 }
             );
             listenerTarget = inital_sprite;
