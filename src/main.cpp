@@ -105,14 +105,14 @@ public:
                             break;
                         }
                         createQuickPopup(
-                            "Unreadable background file",
-                            "Please select a valid background file",
+                            "Unreadable file",
+                            "Please select a valid background file. Maybe something wrong with its name or no permissions to read it.",
                             "OK", nullptr, nullptr
                         );
 					}
 					std::string ext = BACKGROUND_FILE.substr(BACKGROUND_FILE.find_last_of('.'));
 					if ((ext == ".jxl" || ext == ".gif" || ext == ".webp" || ext == ".qoi") && !Loader::get()->isModLoaded("prever.imageplus")) {
-						MDPopup::create("Unhandleable Image Format", "You can't use that file without [Image Plus](prevter.imageplus) mod loaded!", "OK.")->show();
+						MDPopup::create("Unhandleable Format", "You can't use that file without [Image Plus](mod:prevter.imageplus) mod loaded!", "OK.")->show();
 					}
                 }
             );
