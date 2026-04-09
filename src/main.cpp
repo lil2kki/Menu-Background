@@ -111,7 +111,7 @@ public:
                         );
 					}
 					std::string ext = BACKGROUND_FILE.substr(BACKGROUND_FILE.find_last_of('.'));
-					if ((ext == ".jxl" || ext == ".gif" || ext == ".webp" || ext == ".qoi") && !Loader::get()->isModLoaded("prever.imageplus")) {
+					if ((ext == ".jxl" || ext == ".gif" || ext == ".webp" || ext == ".qoi") && !Loader::get()->isModLoaded("prevter.imageplus")) {
 						MDPopup::create("Unhandleable Format", "You can't use that file without [Image Plus](mod:prevter.imageplus) mod loaded!", "OK.")->show();
 					}
                 }
